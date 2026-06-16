@@ -12,7 +12,7 @@ source:
   sha256: e7e49577ddc1f2de8e42d42353b477e338c15bbb95b2558e123ddc13d88789f0
 
 build:
-  number: 0
+  number: 1
   # abi3 packages build once at python_min and ship one artifact per platform.
   skip: is_abi3 and not is_python_min
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -60,6 +60,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - rxm7706
     - killua156
     - mgorny
+    - rxm7706
